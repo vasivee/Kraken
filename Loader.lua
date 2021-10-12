@@ -6,9 +6,9 @@ local games = {
 }
 
 for i,v in pairs(games) do
-   for gamename,placeid in pairs(v) do
-      if place == placeid then
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/vasivee/Kraken/main/games/'..tostring(gamename)..'.lua'))()
-      end
-   end
+    for gamename,placeid in pairs(v) do
+        if place == placeid then
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/vasivee/Kraken/main/games/'..tostring(i)..'.lua'))()
+        end
+    end
 end
