@@ -2152,7 +2152,7 @@ function DiscordLib:Window(text)
 				end)
 				
 				Button.MouseButton1Click:Connect(function()
-					pcall(callback)
+					spawn(function() pcall(callback) end)
 					Button.TextSize = 0
 					TweenService:Create(
 						Button,
@@ -2284,7 +2284,7 @@ function DiscordLib:Window(text)
 							{ImageTransparency = 0}
 						):Play()
 					end
-					pcall(callback, toggled)
+					spawn(function() pcall(callback, toggled) end)
 				
 				Toggle.MouseButton1Click:Connect(function()
 					if toggled == false then
@@ -2337,7 +2337,7 @@ function DiscordLib:Window(text)
 						):Play()
 					end
 					toggled = not toggled
-					pcall(callback, toggled)
+					spawn(function() pcall(callback, toggled) end)
 				end)
 				
 				local tgl = {};
