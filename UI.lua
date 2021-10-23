@@ -2284,7 +2284,7 @@ function DiscordLib:Window(text)
 							{ImageTransparency = 0}
 						):Play()
 					end
-				spawn(function()wait(1) pcall(callback, toggled) end)
+				pcall(callback, toggled)
 				
 				Toggle.MouseButton1Click:Connect(function()
 					if toggled == false then
@@ -2337,7 +2337,7 @@ function DiscordLib:Window(text)
 						):Play()
 					end
 					toggled = not toggled
-					spawn(function() pcall(callback, toggled) end)
+					pcall(callback, toggled) 
 				end)
 				
 				local tgl = {};
@@ -2393,7 +2393,7 @@ function DiscordLib:Window(text)
 						):Play()
 					end
 					toggled = not toggled
-					spawn(function() pcall(callback, toggled) end)
+					pcall(callback, toggled)
 				end
 				
 				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
