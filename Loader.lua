@@ -3,6 +3,7 @@ local place = game.PlaceId
 local games = {
     SquidGame = {7549229959,7553566159};
     HexaGame = {7555007091,7562422641};
+    ERLC = {2534724415};
 }
 
 for i,v in pairs(games) do
