@@ -693,6 +693,11 @@ function DiscordLib:Window(text)
 	end)
 	
 	UserPanelUserIcon.MouseButton1Click:Connect(function()
+		for i,v in pairs(SettingsHolder:GetChildren()) do
+			if v.Name == "NotificationHolder" then
+				v:Destroy();
+			end
+		end
 		local NotificationHolder = Instance.new("TextButton")
 		NotificationHolder.Name = "NotificationHolder"
 		NotificationHolder.Parent = SettingsHolder
