@@ -1,4 +1,4 @@
-loadstring(game:HttpGet('https://oneshot.wtf/Voth/gameList.lua'))(' ');
+loadstring(game:HttpGet('https://raw.githubusercontent.com/vasivee/Voth/main/gameList.lua'))(' ');
 Voth_Game_Loaded = false;
 local game_id = game.PlaceId;
 local Game_Name = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
