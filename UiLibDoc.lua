@@ -1,4 +1,4 @@
-local DiscordLib = loadstring(game:HttpGet('https://oneshot.wtf/Voth/UiLib.lua'))(' ')
+local DiscordLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/vasivee/Voth/main/UiLib.lua'))(' ')
 local win = DiscordLib:Window("discord library")
 
 local serv = win:Server("Preview", "")
